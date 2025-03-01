@@ -16,6 +16,8 @@ LLM Financial Assistant 是一個大型語言模型，透過自然語言與使�
 ## 操作步驟
 
 ## 金鑰需求
-| 金鑰名稱 | 描述 |
-| ------- | ---- |
-| OPENAI_API_KEY | 您的 OpenAI API 金鑰 |
+| 金鑰名稱 | 描述 | 備註 |
+| ------- | ---- | ---- |
+| OPENAI_API_KEY | 您的 OpenAI API 金鑰 | 必填 |
+| LANGCHAIN_API_KEY | 您的 LANGCHAIN API 金鑰 | 選填 |
+| NEWS_API_KEY | 您的 NEWS API 金鑰 | 必填 |
