@@ -1,5 +1,5 @@
 # LLM Financial Assistant 
-LLM Financial Assistant 使用大型語言模型即時回覆有關財經、投資等近期相關資訊。
+LLM Financial Assistant 是一個大型語言模型，透過自然語言與使用者進行互動，即時回覆有關財經、投資等近期相關資訊。
 
 ## 功能
 - 使用 LLM 和 LangChain 進行自然語言理解和生成。
