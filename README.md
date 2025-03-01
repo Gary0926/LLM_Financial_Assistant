@@ -12,7 +12,8 @@ LLM 財經助理是一個基於大型語言模型的 Line 聊天機器人，透�
 - Python 3.11.0
 
 ## 呈現
-
+### Line 介面
+![alt_text](photo/photo1.png)
 
 ## 操作步驟
 1. 將 `InputYourAPIKeys.env` 重新命名為 `.env` 並填寫所有 API 金鑰。
