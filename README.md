@@ -15,11 +15,14 @@ LLM 財經助理是一個基於大型語言模型的 Line 聊天機器人，透�
 
 
 ## 操作步驟
-1. **將 `InputYourAPIKeys.env` 重新命名為 `.env` 並填寫所有值**
+1. 將 `InputYourAPIKeys.env` 重新命名為 `.env` 並填寫所有 API 金鑰。
+2. 下載'requirement.txt'中的所有套件。
 
 ## 金鑰需求
-| 金鑰名稱 | 描述 | 備註 |
+| 名稱 | 描述 | 備註 |
 | ------- | ---- | ---- |
 | OPENAI_API_KEY | 您的 OpenAI API 金鑰 | 必填 |
 | LANGCHAIN_API_KEY | 您的 LANGCHAIN API 金鑰 | 選填 |
 | NEWS_API_KEY | 您的 NEWS API 金鑰 | 必填 |
+| ACCESS_TOKEN | 您的 Channel access token (long-lived) | 串接 Line Bot 必填
+| CHANNEL_SECRET | 您的 Channel secret | 串接 Line Bot 必填
