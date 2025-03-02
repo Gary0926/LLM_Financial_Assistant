@@ -10,8 +10,8 @@ LLM 財經助理是一個基於大型語言模型的 Line 聊天機器人，透�
 
 ## 使用系統及工具
 - Python 3.11.0
-- VS Code
-- Ngrok (串接 Line Bot 使用)
+- VS Code (串接 Line Bot 時使用)
+- Ngrok (串接 Line Bot 時使用)
 
 ## 呈現
 ### Line 介面
@@ -22,7 +22,7 @@ LLM 財經助理是一個基於大型語言模型的 Line 聊天機器人，透�
 1. 申請金鑰。
 2. 將 `InputYourAPIKeys.env` 重新命名為 `.env` 並填寫所有 API 金鑰。
 3. 下載 `requirement.txt` 中的所有套件。
-```bash
+```
 pip install -r requirements.txt
 ```
 4. 執行 `llm_financial_assistany.ipynb`。
