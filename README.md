@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ## 金鑰需求
 | 名稱 | 描述 | 備註 |
-| ------- | ---- | ---- |
+| ---- | ---- | ---- |
 | OPENAI_API_KEY | 您的 OpenAI API 金鑰 | 必填 |
 | LANGCHAIN_API_KEY | 您的 LANGCHAIN API 金鑰 | 選填 |
 | NEWS_API_KEY | 您的 NEWS API 金鑰 | 必填 |
@@ -39,3 +39,8 @@ pip install -r requirements.txt
 ## 呈現
 ### Line 介面
 ![line 訊息](photo/photo1.png)
+
+## (尚待補充文件)
+- `requirement.txt`
+- `程式執行相片.png`
+- `流程圖.png`
