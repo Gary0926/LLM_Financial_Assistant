@@ -8,7 +8,7 @@ LLM 財經助理是一個基於大型語言模型的 Line 聊天機器人，透�
 - 透過 RAG 技術使 LLM 能根據外部文件提供更即時具體的回答。
 - 串接 Line Bot API 獲取 Line 聊天介面。
 
-## 使用系統
+## 使用系統及工具
 - Python 3.11.0
 - VS Code
 - Ngrok (串接 Line Bot 使用)
@@ -26,9 +26,10 @@ LLM 財經助理是一個基於大型語言模型的 Line 聊天機器人，透�
 pip install -r requirements.txt
 ```
 4. 執行 `llm_financial_assistany.ipynb`。
-### 額外使用 Line Bot (詳情可參考網路資源：[國北教大 line bot 教學](https://www.youtube.com/watch?v=Mw3cODdkaFM&t=1426s))
+### 額外使用 Line Bot (詳情可參考網路資源：[Line Bot 教學](https://www.youtube.com/watch?v=Mw3cODdkaFM&t=1426s))
 5. 在 Line Developers 申請官方帳號，建立 Message API channel。
 6. 啟用 Ngrok 連接本地伺服器和 Line 伺服器。
+7. 啟用 VS Code 的 Python Debugger (使用 Flask)。
 
 ## 金鑰需求
 | 名稱 | 描述 | 備註 |
@@ -36,5 +37,5 @@ pip install -r requirements.txt
 | OPENAI_API_KEY | 您的 OpenAI API 金鑰 | 必填 |
 | LANGCHAIN_API_KEY | 您的 LANGCHAIN API 金鑰 | 選填 |
 | NEWS_API_KEY | 您的 NEWS API 金鑰 | 必填 |
-| ACCESS_TOKEN | 您的 Channel access token (long-lived) | 串接 Line Bot 必填
-| CHANNEL_SECRET | 您的 Channel secret | 串接 Line Bot 必填
+| ACCESS_TOKEN | 您的 Channel access token (long-lived) | 串接 Line Bot 必填 |
+| CHANNEL_SECRET | 您的 Channel secret | 串接 Line Bot 必填 |
