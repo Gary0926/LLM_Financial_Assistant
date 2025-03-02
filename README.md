@@ -45,4 +45,3 @@ pip install -r requirements.txt
 
 ## (尚待補充文件)
 - `requirement.txt`
-- `流程圖.png`
