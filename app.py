@@ -54,7 +54,7 @@ def handle_message(event):
             output_text = '--對話結束--'
         else:
             output= investment_pipeline.invoke({'query': input_text})
-            output_text = output['anwser']
+            output_text = output['answer']
         line_bot_api = MessagingApi(api_client)
         line_bot_api.reply_message_with_http_info(
             ReplyMessageRequest(
