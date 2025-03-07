@@ -69,12 +69,14 @@ def finance_question_determination(state: InvestmentState):
 
     llm = ChatOpenAI(model_name="gpt-4", temperature=0)
     finance_question_determination_prompt_template = """
-    你是一位投資分析師，請先根據提問內容判斷是否為財經問題。
+    你是一位投資分析師，請先根據提問內容判斷與對話紀錄是否為財經問題。
     如果是財經問題，請回答 '是'，否則回答 '否'。
     
     提問內容：
     {input}
-    
+    對話紀錄：
+    {history}
+
     你的回答（只回應 '是' 或 '否'）
     """
 
@@ -88,7 +90,7 @@ def finance_question_determination(state: InvestmentState):
     )
       
     response = finance_question_determination_chain.invoke({
-        'input': query
+        'input': query, 'history': history
     })
  
     if response.strip() == "是":
@@ -426,7 +428,7 @@ def investment_llm(state: InvestmentState):
     def retrieve_relevant_news(query, vector_db):
         docs = vector_db.similarity_search(query, k=3)  # 取 3 則最相關新聞
         print('📑檢索最相關文件:')   
-        docs_with_scores = vector_db.similarity_search_with_score(query, k=3)
+        docs_with_scores = vector_db.similarity_search_with_score(query, k=2)
 
         for doc, score in docs_with_scores:
             print(f"相似度分數: {score}\n新聞內容: {doc.page_content}")
