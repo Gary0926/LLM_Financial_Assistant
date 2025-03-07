@@ -43,5 +43,4 @@ pip install -r requirements.txt
 ### Line 介面
 ![line 訊息](photo/photo1.png)
 
-## (尚待補充文件)
-- `requirement.txt`
+
