@@ -428,7 +428,7 @@ def investment_llm(state: InvestmentState):
     def retrieve_relevant_news(query, vector_db):
         docs = vector_db.similarity_search(query, k=3)  # 取 3 則最相關新聞
         print('📑檢索最相關文件:')   
-        docs_with_scores = vector_db.similarity_search_with_score(query, k=2)
+        docs_with_scores = vector_db.similarity_search_with_score(query, k=3)
 
         for doc, score in docs_with_scores:
             print(f"相似度分數: {score}\n新聞內容: {doc.page_content}")
