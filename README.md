@@ -23,11 +23,11 @@ OinkVestGPT 是一個基於大型語言模型的 Line 聊天機器人，透過�
   -  [NewsAPI](https://newsapi.org/)
   -  [Line Developers (選填)](https://developers.line.biz/en/)
 2. 將 `InputYourAPIKeys.env` 重新命名為 `.env` 並填寫所有 API 金鑰。
-3. 下載 `requirement.txt` 中的所有套件。
+3. 下載 `requirements.txt` 中的所有套件。
 ```
 pip install -r requirements.txt
 ```
-4. 執行 `llm_financial_assistany.ipynb`。
+4. 執行 `llm_financial_assistant.ipynb`。
 ### 額外使用 Line Bot (詳情可參考網路資源：[Line Bot 教學](https://www.youtube.com/watch?v=Mw3cODdkaFM&t=1426s))
 5. 在 Line Developers 申請官方帳號，建立 Message API channel。
 6. 啟用 Ngrok 連接本地伺服器和 Line 伺服器。
